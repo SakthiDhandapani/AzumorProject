@@ -1,0 +1,10 @@
+syntax = "proto2";
+package com.azumor;
+option java_package = "com.azumor.protobuff";
+option java_outer_classname = "PersonProtos";
+
+message Person {
+   required string firstname = 1;
+   optional string lastname = 2;
+   required int32 age = 3;   
+}
